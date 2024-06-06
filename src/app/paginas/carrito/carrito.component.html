@@ -1,0 +1,31 @@
+
+<!-- carrito.component.html -->
+<h2>Carrito de Compras</h2>
+<!--<mat-list>
+    <mat-list-item *ngFor="let productos of products;  let indice = index" >-->
+    
+        <div *ngIf="items.length; else emptyCart">
+            <div *ngFor="let item of items; let i = index"> 
+    <div class="contenedor-detalles">
+        <div class="imagen">
+            <img [src]="item.image" alt="{item.title}">
+        </div>
+        <div class="'descripcion">
+          <h2>{{item.title}}</h2>
+          <p><s>Precio de venta recomendado ${{ item.originalPrice}}</s></p>
+          <p><strong>!Ahora a la venta por solo ${{item.price}}</strong></p>
+          <p><span>Calificacion de nuestros consumidores: </span><strong>{{item.rating.rate}}/5</strong></p>
+          <p>{{item.description}}</p>
+         <!-- <button mat-button color="warn" (click)="onClickDelete(indice)">Borrar</button>-->
+         <button (click)="removeFromCart(i)">Eliminar del Carrito</button>
+        </div>
+    </div>   
+  </div>
+ </div>
+
+
+<!--</mat-list-item>
+</mat-list>-->
+<ng-template #emptyCart>
+  <p>Tu carrito está vacío.</p>
+</ng-template>

@@ -1,0 +1,42 @@
+.contenedor-productos {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contenedor-productos div {
+  flex-basis: calc(25% - 1rem); /* Ajustar el tamaño de cada div considerando el gap */
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 1rem;
+  background-color: #f9f9f9; /* Fondo claro para los productos */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.contenedor-productos div:hover {
+  transform: translateY(-5px); /* Efecto hover para levantar ligeramente */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa en hover */
+}
+
+@media (max-width: 1024px) {
+  .contenedor-productos div {
+      flex-basis: calc(33.33% - 1rem); /* Tres columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-productos div {
+      flex-basis: calc(50% - 1rem); /* Dos columnas en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-productos div {
+      flex-basis: 100%; /* Una columna en pantallas muy pequeñas */
+  }
+}
+   
