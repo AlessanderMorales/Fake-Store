@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .contenedor-productos {
   display: flex;
   flex-direction: row;
@@ -39,4 +40,17 @@
       flex-basis: 100%; /* Una columna en pantallas muy pequeñas */
   }
 }
+=======
+.contenedor-productos{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    div{
+      flex-basis: 25%;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+   }
+>>>>>>> d532dac02b853851a67013834d7772384bdd9397
    

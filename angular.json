@@ -30,7 +30,10 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "@angular/material/prebuilt-themes/deeppurple-amber.css",
+=======
+>>>>>>> d532dac02b853851a67013834d7772384bdd9397
               "src/styles.scss"
             ],
             "scripts": []
@@ -91,7 +94,10 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "@angular/material/prebuilt-themes/deeppurple-amber.css",
+=======
+>>>>>>> d532dac02b853851a67013834d7772384bdd9397
               "src/styles.scss"
             ],
             "scripts": []

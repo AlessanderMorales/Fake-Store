@@ -1,4 +1,5 @@
 <div class="topnav">
+<<<<<<< HEAD
   <a [routerLink]="['/inicio']" routerLinkActive="active">Inicio</a>
   <a [routerLink]="['/tienda']" routerLinkActive="active">Tienda</a>
   <a [routerLink]="['/nosotros']" routerLinkActive="active">Nosotros</a>
@@ -11,4 +12,15 @@
   </div>
 </div>
 
+=======
+  <a [routerLink]="['inicio']" routerLinkActive="active">Inicio</a>
+  <a [routerLink]="['tienda']" routerLinkActive="active">Tienda</a>
+  <a [routerLink]="['nosotros']" routerLinkActive="active">Nosotros</a>
+  <a [routerLink]="['contactanos']" routerLinkActive="active">Contactanos</a>
+  <a [routerLink]="['carrito']" routerLinkActive="active">Carrito</a>
+
+  <input type="text" placeholder="Buscar..." [formControl]="searchControl" (keyup.enter)="onSearch()" />
+  <button class="primary" (click)="onSearch()">Buscar</button>
+</div>
+>>>>>>> d532dac02b853851a67013834d7772384bdd9397
 <router-outlet></router-outlet>

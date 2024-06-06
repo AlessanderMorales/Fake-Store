@@ -1,7 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+<<<<<<< HEAD
 import { CarritoService } from '../../carrito.service'; // Asegúrate de que la ruta al servicio es correcta
 
+=======
+import { CarritoService } from '../../carrito.service';
+>>>>>>> d532dac02b853851a67013834d7772384bdd9397
 
 @Component({
   selector: 'app-carrito',
